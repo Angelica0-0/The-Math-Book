@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade a Submission</title>
+</head>
+<body>
+    <form id="grading-form" action="/grade-submission" method="post">
+        <label for="submissionId">Submission ID:</label>
+        <input type="text" id="submissionId" name="submissionId" required>
+
+        <label for="grade">Grade:</label>
+        <select id="grade" name="grade">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+        </select>
+
+        <button type="submit">Submit Grade</button>
+    </form>
+</body>
+</html>
